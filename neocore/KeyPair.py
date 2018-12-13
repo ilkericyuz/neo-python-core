@@ -184,7 +184,7 @@ class KeyPair(object):
         data[34:38] = checksum[0:4]
         b58 = base58.b58encode(bytes(data))
 
-        return b58.decode("utf-8")
+        return b58
 
     def ExportNEP2(self, passphrase):
         """
