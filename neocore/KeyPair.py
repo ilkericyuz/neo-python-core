@@ -230,4 +230,4 @@ class KeyPair(object):
 
         # Finally, encode with Base58Check
         encrypted_key_nep2 = base58.b58encode_check(bytes(assembled))
-        return encrypted_key_nep2.decode("utf-8")
+        return encrypted_key_nep2
